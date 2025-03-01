@@ -1,1 +1,205 @@
-hello
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe of Smiles</title>
+    <link rel="icon" type="image/png" href="smile.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            text-align: center;
+            background-color: #ffffff;
+        }
+		header {
+		    background: url('header_white.png') no-repeat center center/cover;
+		    height: 65vh;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+        .content {
+            margin: 50px 20px;
+        }
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 50px auto;
+            text-align: left;
+            border-top: 1px solid #ccc;
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .text-section {
+            width: 70%;
+        }
+        .text-section h2 {
+            font-size: 1.0rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .text-section p {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        .text-section p em {
+            font-style: italic;
+        }
+        .input-section {
+            margin-top: 35px;
+        }
+        .input-section label {
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-section input {
+            width: 100%;
+            padding: 8px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 0px;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: black;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background: #333;
+        }
+        .image-section {
+            width: 25%;
+            text-align: right;
+        }
+        .image-section img {
+            width: 150px;
+            opacity: 0.7;
+			margin: 50px auto;
+        }
+        .postcard-icon {
+            width: 150px;
+            display: block;
+            margin: 20px auto;
+        }
+        .footer-nav {
+            font-size: 0.7rem;
+            color: #1e1e1e;
+            margin-top: 5px;
+			margin-bottom: 20px;
+        }
+		.btn-ready {
+		    color: #ffb6c1 !important;
+		}
+		
+    </style>
+</head>
+<body>
+
+    <header></header>
+
+
+    <div class="content">
+        <p style="font-size: 1rem; font-weight: bold; margin-bottom: 20px;">(: WE ARE HERE FOR PEACE, LOVE & SMILES :)</p>
+        <h1>SEND A SMILE</h1>
+        <img src="postcard_1.png" alt="Postcard Icon" class="postcard-icon">
+    </div>
+
+    <div class="container">
+        <div class="text-section">
+            <h2>GENERATE YOUR POSTCARD WITH A "UNIVERSE OF SMILES" NFT.</h2>
+            <p>1. FILL YOUR NFT NAME IN. PRESS OK.</p>
+            <p>2. DOWNLOAD YOUR POSTCARD</p>
+            <p><em>3. SPREAD YOUR SMILE TO THE WORLD</em></p>
+		<div class="input-section">
+		    <label for="nft-name">NFT NAME: (example: PEACE 13)</label>
+		    <input type="text" id="nft-name" placeholder="Enter NFT name">
+		    <button class="btn" onclick="updateDownloadLink()">OK</button> <!-- Ruft das Skript auf -->
+		</div>
+
+		<div class="input-section">
+			<a id="download-btn" class="btn" href="#" target="_blank" download>DOWNLOAD YOUR POSTCARD</a>
+		</div>
+
+        </div>
+        <div class="image-section">
+            <img src="postcard_icon.png" alt="Postcard Icon">
+        </div>
+    </div>
+
+     <div style="background-color: #1e1e1e; color: #fff; text-align: center; padding: 120px 20px;">
+        <h3 style="font-size: 0.9rem; font-weight: bold; text-transform: uppercase; color: #fff; letter-spacing: 1px;">
+            THE IDEA OF THE NFT ART PROJECT
+        </h3>
+        <h1 style="font-size: 2.5rem; font-weight: bold; text-transform: uppercase; color: #fff; margin-top: 30px;">
+            GIVE SOMEBODY A SMILE
+        </h1>
+        <p style="font-size: 0.9rem; color: #ccc; max-width: 850px; margin: 30px auto; line-height: 1.8;">
+            In a world that sometimes feels heavy, a simple smile can be a powerful reminder of kindness, love, and peace. This NFT collection is dedicated to spreading joy, one digital smile at a time. Each piece is designed to evoke warmth and positivity, with the hope of inspiring more love and compassion across the globe. Join us in this movement to make the world a little brighter, one smile, one token, and one heart at a time.
+        </p>
+        <p style="font-size: 1rem; color: #ccc; margin-top: 20px;">The postcard generator is a free option to spread your smile to the world.</p>
+		<div style="display: flex; justify-content: center; gap: 40px; margin-top: 30px;">
+		    <div style="text-align: center;">
+		        <img src="peace.png" alt="Icon 1" style="width: 40px; height: auto; opacity: 0.9;">
+		        <p style="font-size: 0.9rem; font-weight: bold; margin-top: 5px; color: #bbb;">PEACE</p>
+		    </div>
+		    <div style="text-align: center;">
+		        <img src="heart.png" alt="Icon 2" style="width: 40px; height: auto; opacity: 0.9;">
+		        <p style="font-size: 0.9rem; font-weight: bold; margin-top: 5px; color: #bbb;">LOVE</p>
+		    </div>
+		    <div style="text-align: center;">
+		        <img src="smile.png" alt="Icon 3" style="width: 40px; height: auto; opacity: 0.9;">
+		        <p style="font-size: 0.9rem; font-weight: bold; margin-top: 5px; color: #bbb;">SMILE</p>
+		    </div>
+		</div>
+        <hr style="border: none; height: 1px; background-color: #888; width: 60%; margin: 70px auto;">
+        <p style="font-size: 1rem; font-weight: bold; margin-bottom: 20px;">YOU WILL FIND THE UNIVERSE OF SMILES NFT´S ON OPENSEA.</p>
+        <a href="https://opensea.io/collection/universeofsmiles" style="display: inline-block; padding: 10px 20px; border: 0.5px solid #fff; color: #fff; text-decoration: none; font-size: 1.0rem;">www.opensea.io</a>
+	</div>
+		</div>
+        <p style="margin-top: 20px; font-size: 0.7rem;">© 2025 UNIVERSE OF SMILES | All rights reserved</p>
+	    <p class="footer-nav"><a href="#" style="color: #888; text-decoration: none;">UP</a> | <a href="impressum.html" style="color: #888; text-decoration: none; cursor: pointer;">IMPRINT & DATA PROTECTION STATEMENT</a></p>
+				</div>
+<script>
+    function updateDownloadLink() {
+        let nftName = document.getElementById("nft-name").value.trim();
+
+        if (nftName === "") {
+            alert("please ad an nft name from universe of smiles. example: PEACE 345");
+            return;
+        }
+
+        let downloadLink = "pdfs/" + nftName.replace(/PEACE[ ]*/i,"") + ".pdf"; // Hier den richtigen Ordner setzen
+
+        let downloadButton = document.getElementById("download-btn");
+        downloadButton.href = downloadLink;
+        downloadButton.classList.add("btn-ready"); // Ändert die Schriftfarbe zu rosa
+    }
+</script>
+
+
+	
+	</body>
+	</html>
